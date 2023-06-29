@@ -52,16 +52,14 @@ public class Quiz{
     static void check(String question, String correctAnswer){
         nQuestions++;
 
-        while(true){
+        
             String answer = ask(question);
             if (answer.equals(correctAnswer)){
                 JOptionPane.showMessageDialog(null, "Correct!");
                 nCorrect++;
-                break;
             }
             else{
                 JOptionPane.showMessageDialog(null, "Incorrect! The correct answer is " + correctAnswer);
-                break;
             }
         }    
         
@@ -70,4 +68,3 @@ public class Quiz{
 
 
 
-}
